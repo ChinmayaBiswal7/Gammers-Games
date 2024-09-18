@@ -1,0 +1,99 @@
+/* Existing styles... */
+/* style.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #88add1; /* Updated background color */
+}
+
+#welcome-page {
+  text-align: center;
+}
+
+#game-container {
+  text-align: center;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(7, 50px);
+  grid-template-rows: repeat(6, 50px);
+  gap: 5px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.cell.red {
+  background-color: red;
+}
+
+.cell.yellow {
+  background-color: yellow;
+}
+
+#game-status {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: white; /* Text color for game status */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  background-color: red; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(255, 255, 255, 0.6); /* Glowing effect */
+}
+
+button:hover {
+  opacity: 0.8; /* Slight transparency on hover */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+#board {
+  background-color: #555; /* Darker board background for dark mode */
+}
+
+.cell {
+  border: 1px solid #ccc; /* Lighter border for dark mode */
+}
+
+button {
+  background-color: #444; /* Darker button color for dark mode */
+  color: #f0f0f0; /* Button text color for dark mode */
+}
+
+button:hover {
+  background-color: #666; /* Darker button hover color for dark mode */
+}
+
+/* Exit button styles */
+#exit {
+  background-color: #f44336; /* Red color for exit button */
+}
+
+#exit:hover {
+  background-color: #d32f2f; /* Darker red for hover effect */
+}

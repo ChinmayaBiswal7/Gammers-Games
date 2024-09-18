@@ -1,0 +1,69 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Game Selection Screen */
+#gameSelectionScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#gameSelectionScreen h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#gameSelectionScreen button {
+  background-color: #2196f3; /* Blue */
+}
+
+#gameSelectionScreen button:hover {
+  background-color: #0b7dda;
+}
+
+/* Game Container Styles */
+#gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #007fff; /* Background color for game area */
+}
+
+#gameArea {
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  position: relative;
+}
+
+#score {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}

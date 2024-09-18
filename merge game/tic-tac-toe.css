@@ -1,0 +1,292 @@
+* Default to dark mode */ body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body.light-mode {
+  background-color: white;
+  color: black;
+}
+
+/* Welcome Popup Styles */
+#welcomePopup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#welcomePopup h2 {
+  color: yellow; /* Set welcome text color to yellow */
+  margin-bottom: 20px;
+  font-size: 2em; /* Increase font size */
+  text-shadow: 0 0 10px yellow; /* Glow effect */
+}
+
+#startGameButton,
+#playWithComputerButton {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: white;
+  background-color: darkred;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-shadow: 0 0 10px white; /* Glow effect */
+}
+
+#startGameButton:hover,
+#playWithComputerButton:hover {
+  background-color: red;
+}
+
+/* Game Content Styles */
+#gameContent {
+  display: none;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em; /* Increase font size */
+  text-shadow: 0 0 10px white; /* Glow effect */
+}
+
+#playerNames {
+  margin-bottom: 10px;
+  font-size: 2em; /* Increase font size */
+  text-shadow: 0 0 10px white; /* Glow effect */
+}
+
+#message {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  text-shadow: 0 0 10px white; /* Glow effect */
+}
+
+/* Grid Container Styles */
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  max-width: 330px;
+  width: 100%;
+}
+
+.cell {
+  width: 100%;
+  height: 100px; /* Adjusted for consistency */
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-shadow: 0 0 10px white; /* Glow effect */
+}
+
+.cell:hover {
+  background-color: darkblue;
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .cell {
+    height: 80px; /* Smaller height for smaller screens */
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Button Styles */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: darkred;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-shadow: 0 0 10px white; /* Glow effect */
+}
+
+button:hover {
+  background-color: red;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.navbar button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: darkred;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-shadow: 0 0 10px white; /* Glow effect */
+}
+
+.navbar button:hover {
+  background-color: red;
+}
+
+#modeToggleButton {
+  background-color: lightgray;
+  color: red; /* Changed text color to red */
+}
+
+#modeToggleButton:hover {
+  background-color: gray;
+}
+
+#musicToggleButton {
+  background-color: green; /* Button color green */
+}
+
+#musicToggleButton:hover {
+  background-color: darkgreen;
+}
+
+/* Mode Switcher Styles */
+.mode-switcher {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#lightModeButton,
+#darkModeButton {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: red; /* Changed text color to red */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-shadow: 0 0 10px white; /* Glow effect */
+}
+
+#lightModeButton {
+  background-color: lightgray;
+}
+
+#darkModeButton {
+  background-color: darkgray;
+}
+
+#lightModeButton:hover {
+  background-color: gray;
+}
+
+#darkModeButton:hover {
+  background-color: gray;
+}
+
+/* Scoreboard Styles */
+#scoreboard-container {
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#scoreboard {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+#scoreboard th,
+#scoreboard td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#scoreboard th {
+  background-color: green; /* Header color green */
+  color: white;
+}
+
+#scoreboard td {
+  background-color: gray; /* Changed background color to gray */
+}
+
+#scoreboard tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Music Control Styles */
+.music-controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#musicToggleButton {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: green; /* Button color green */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-shadow: 0 0 10px white; /* Glow effect */
+}
+
+#musicToggleButton:hover {
+  background-color: darkgreen;
+}
+
+/* Flexbox container for music controls and mode switcher */
+.controls-container {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 10px; /* Space between buttons */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 20; /* Ensure it's above other elements */
+}
+
+.music-controls,
+.mode-switcher {
+  margin: 0; /* Remove margin to align items properly */
+}
+
+.music-controls {
+  margin-right: 10px; /* Add space between music controls and mode switcher */
+}
+
+/* Logo Styles */
+#logo {
+  display: block;
+  margin: 20px auto;
+  width: 150px; /* Adjust the size as needed */
+}

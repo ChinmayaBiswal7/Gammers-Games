@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hand Cricket Game</title>
+    <link rel="stylesheet" href="cricket.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hand Cricket Game</h1>
+
+      <!-- Toss Section -->
+      <div id="tossSection">
+        <h2>Choose Heads or Tails</h2>
+        <button class="toss-btn" onclick="toss('Heads')">Heads</button>
+        <button class="toss-btn" onclick="toss('Tails')">Tails</button>
+      </div>
+
+      <!-- Bat or Ball Choice Section -->
+      <div id="batBallSection">
+        <h2>Choose Bat or Ball</h2>
+        <button class="bat-ball-btn" onclick="chooseBatOrBall('bat')">
+          Bat
+        </button>
+        <button class="bat-ball-btn" onclick="chooseBatOrBall('ball')">
+          Ball
+        </button>
+      </div>
+
+      <!-- Game Play Section -->
+      <div id="gamePlaySection">
+        <h2 id="gameStatus">Game Status</h2>
+        <div id="score">Score: 0</div>
+        <div id="targetMessage"></div>
+        <div id="result"></div>
+        <div id="outMessage">OUT!</div>
+        <h3>Select a number between 1 to 6</h3>
+        <button class="play-btn" onclick="playerPlay(1)">1</button>
+        <button class="play-btn" onclick="playerPlay(2)">2</button>
+        <button class="play-btn" onclick="playerPlay(3)">3</button>
+        <button class="play-btn" onclick="playerPlay(4)">4</button>
+        <button class="play-btn" onclick="playerPlay(5)">5</button>
+        <button class="play-btn" onclick="playerPlay(6)">6</button>
+      </div>
+
+      <!-- New Game & Exit Section -->
+      <div id="newGameSection">
+        <div id="winnerMessage"></div>
+        <button class="toss-btn" onclick="startNewMatch()">New Match</button>
+        <button class="exit-btn" onclick="exitGame()">Exit</button>
+      </div>
+    </div>
+
+    <script src="cricket.js"></script>
+  </body>
+</html>

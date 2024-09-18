@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamming Games</title>
+    <link rel="stylesheet" href="tic-tac-toe.css" />
+  </head>
+  <body>
+    <!-- Welcome Popup -->
+    <div id="welcomePopup">
+      <h2>Welcome Gamer to Tic Tac Toe</h2>
+      <button id="startGameButton">Start Game</button>
+      <button id="playWithComputerButton">Play with Computer</button>
+    </div>
+
+    <!-- Game Content -->
+    <div id="gameContent">
+      <h1>Tic-Tac-Toe</h1>
+      <div id="playerNames"></div>
+      <div id="message"></div>
+      <nav class="navbar">
+        <button id="modeToggleButton">Dark Mode</button>
+        <button id="musicToggleButton">Music On</button>
+      </nav>
+      <div class="grid-wrapper">
+        <div class="grid-container">
+          <div class="grid">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+          </div>
+        </div>
+      </div>
+      <button id="restartButton">Restart Game</button>
+      <button id="resetButton">Reset Scores</button>
+      <button id="exitButton">Exit</button>
+    </div>
+
+    <!-- Scoreboard Container -->
+    <div id="scoreboard-container">
+      <h2>Player Scores</h2>
+      <table id="scoreboard">
+        <thead>
+          <tr>
+            <th>Match</th>
+            <th id="player1-header">Player 1 Score</th>
+            <th id="player2-header">Player 2 Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Match 1</td>
+            <td id="player1-score">10</td>
+            <td id="player2-score">8</td>
+          </tr>
+          <tr>
+            <td>Match 2</td>
+            <td id="player1-score">15</td>
+            <td id="player2-score">12</td>
+          </tr>
+          <tr>
+            <td>Match 3</td>
+            <td id="player1-score">7</td>
+            <td id="player2-score">9</td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </div>
+
+    <audio
+      id="backgroundMusic"
+      src="neon-gaming-128925.mp3"
+      preload="auto"
+    ></audio>
+
+    <script src="tic-tac-toe.js"></script>
+  </body>
+</html>

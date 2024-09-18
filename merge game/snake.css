@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents scrollbars */
+  background-color: #007fff; /* Background color */
+  color: #fff;
+  font-family: Arial, sans-serif;
+  position: relative; /* Allows absolute positioning of elements */
+}
+
+canvas {
+  display: block; /* Removes extra space around the canvas */
+  background-color: #000; /* Snake game background color */
+}
+
+button {
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
+  z-index: 1000; /* Ensures the button is above the canvas */
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+#restart {
+  top: 10px;
+  left: 10px;
+}
+
+#exit {
+  top: 10px;
+  right: 10px;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  z-index: 1000;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  button {
+    font-size: 14px; /* Smaller font size for buttons on mobile */
+    padding: 8px 16px; /* Smaller padding for buttons on mobile */
+  }
+
+  #score {
+    top: 50px; /* Adjust score position for mobile */
+    font-size: 18px; /* Smaller font size for score on mobile */
+  }
+}
